@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset='UTF-8'/>
+        <title>Homework #1 for JHU SPA with Angular</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+
+    <body ng-app="SpaAngularHomework1App">
+        <div ng-controller="SpaAngularHomework1Controller">
+            <br/>
+            <br/>
+            Please input lunch items (separated by comma) 
+            <input type="text" ng-model="items" ng-style="inputTextStyle" />
+            <br/>
+            {{suggestions}}
+            <br/>
+            <button id="checkItems" name="checkItems" ng-click="checkLunchItems();">Check If too Much</button>
+            <br/>
+        </div>
+    </body>
+</html>
